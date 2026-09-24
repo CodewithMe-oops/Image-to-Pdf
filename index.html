@@ -35,13 +35,27 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 22px;
             font-weight: 700;
             color: #4f46e5;
         }
 
+        .logo-mark {
+            width: 42px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
         .logo span {
-            color: #111827;
+            color: #4f46e5;
         }
 
         .header-text {
@@ -334,7 +348,8 @@
 
 <header>
     <div class="logo">
-        Image<span>2PDF</span>
+        <img class="logo-mark" src="image.png" alt="Image2PDF logo">
+        <span>Image2PDF</span>
     </div>
 
     <div class="header-text">
@@ -523,7 +538,7 @@
 
 
 <footer>
-    © 2026 Image2PDF — Your images stay in your browser.
+    © 2026 Image2PDF  ~ Your images stay in your browser ~
 </footer>
 
 
